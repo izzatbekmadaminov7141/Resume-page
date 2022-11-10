@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+:root{
+
+  // colors 
+  --bgc-yellow :#f7b301;
+  --background: #f1f0f5;
+  --text-p:#767676;
+  --bgc-white:#fff;
+  // transitions 
+  --t-1:all 0.3s ease-in;
+  --t-2:all 0.5s ease-in;
+  --t-3:all 0.7s ease-in;
+  --t-4:all 1s ease-in;
+}
+ 
+body{
+  background-color:#f1f0f5;
+  transition: var(--t-3);
+}
+// auxiliary codes
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  padding: 15px;
+  width: 100%;
+  background-color:var(--bgc-yellow);
+  font-size: 18px;
+  border: none;
+}
+header{
+  display: flex;
+}
+
+@for $var from 1 to 13 {
+  .col-#{$var} {
+    width:( 100/12) * $var * 1%;
+  }
+}

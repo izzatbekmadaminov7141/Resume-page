@@ -22,10 +22,6 @@ const HomeMedia = createGlobalStyle`
               width: 50%;
             }
           }
-          img{
-            width: 40%;
-            position: static;
-          }
         }
         .skills{
           margin: 0 20px;

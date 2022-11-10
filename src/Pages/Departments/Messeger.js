@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useEffect } from "react";
 import Messege from "./MessegerStyle";
 import { motion } from "framer-motion";
-import { CodeMotion } from "./CodeStyle";
+import { CodeMotion } from "./Code/CodeStyle";
 import MessMedia from "./MessMedia";
 function Messeger() {
   const inputRef = useRef();

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaUniversity } from "react-icons/fa";
 import EduStyled from "./EndStyled";
 import { motion } from "framer-motion";
-import { CodeMotion } from "./CodeStyle";
+import { CodeMotion } from "./Code/CodeStyle";
 import EduMedia, { CardPage } from "./EduMedia";
 function Edu() {
   const [state] = useState([

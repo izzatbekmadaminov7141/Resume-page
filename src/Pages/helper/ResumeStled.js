@@ -9,10 +9,10 @@ const ResumeStyled = createGlobalStyle`
     text-align: center;
     margin-right:10px ;
     position: fixed;
-    top: 50px;
+    top: 70px;
     z-index: 3;
-    /* border: 1px solid var(--text-p); */
-    border-radius:0  20px 20px 0;
+    border-radius:20px;
+    margin-left: 30px;
     img{
       width: 150px;
       height:150px;

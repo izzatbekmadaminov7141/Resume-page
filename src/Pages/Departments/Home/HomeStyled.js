@@ -1,18 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const HomeMotion = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { duration: 1 } },
-  exit: { opacity: 0, transition: { duration: 1 } },
+  hidden: { y: -500 },
+  show: { y:0, transition: { duration: 1 } },
 };
 
 const HomeStyled = createGlobalStyle`
 .HomePage{
-  width: 1450px;
-  height: 100vh;
+  width: 70vw;
+  height: 95vh;
   padding: 0  30px;
   position: absolute;
-  right: 120px;
+  right: 10vw;
+  top: 20px;
    .home{
   width: 100%;
   background-color:#fff;
@@ -21,11 +21,15 @@ const HomeStyled = createGlobalStyle`
   justify-content: space-around;
   align-items:center;
   padding: 40px 100px;
+  border-radius: 20px 20px 0 0;
+  img{
+    width: 300px;
+  }
   .home_left{
     width: 65%;
     h1{
       color:#2b2b2b;
-      font-size: 70px;
+      font-size: 50px;
       span{
         color:var(--bgc-yellow);
       }
@@ -44,7 +48,7 @@ const HomeStyled = createGlobalStyle`
 } 
 .skills{
   h1{
-    font-size:40px;
+    font-size:35px;
     margin: 20px 0;
     color:#2b2b2b;
   }
@@ -52,9 +56,9 @@ const HomeStyled = createGlobalStyle`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     span{
-      font-size: 90px;
+      font-size: 70px;
       color: #2b2b2b;
       transition:var(--t-1);
       &:hover{

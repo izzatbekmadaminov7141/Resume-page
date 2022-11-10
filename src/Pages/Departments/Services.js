@@ -8,7 +8,7 @@ import { GiCook } from "react-icons/gi";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CodeMotion } from "./CodeStyle";
+import { CodeMotion } from "./Code/CodeStyle";
 import ServiceMedia from "./ServisMedia";
 function Services() {
   const [icons] = useState([

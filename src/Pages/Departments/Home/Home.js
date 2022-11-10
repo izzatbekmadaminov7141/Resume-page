@@ -1,5 +1,5 @@
 import React from "react";
-import Bgc from "../../Picture/my.png";
+import Bgc from "../../../Picture/my.png";
 import HomeStyled, { HomeMotion } from "./HomeStyled";
 import HomeMedia from "./HomeMedia";
 import { motion } from "framer-motion";

@@ -12,15 +12,15 @@ function Resume() {
   const [info] = useState([
     { pinfo: "Age", pnum: 25 },
     { pinfo: "Residence:", pnum: "Asaka" },
-    { pinfo: "Freelance:", pnum: "Upwork, Fiverr" },
-    { pinfo: "Address:", pnum: "Uzbekistan,Andijon" },
+    { pinfo: "Freelance:", pnum: "Upwork" },
+    { pinfo: "Address:", pnum: "Uzbekistan" },
   ]);
   // language
-  const [lang] = useState([
-    { nation: "Uzbek", bil: "80%" },
-    { nation: "English", bil: "40%" },
-    { nation: "Russia", bil: "60%" },
-  ]);
+  // const [lang] = useState([
+  //   { nation: "Uzbek", bil: "70%" },
+  //   { nation: "English", bil: "40%" },
+  //   { nation: "Russia", bil: "60%" },
+  // ]);
   // onLine
   useEffect(() => {
     if (navigator.onLine) {
@@ -62,14 +62,6 @@ function Resume() {
             {" "}
             <i class="bi bi-youtube"></i>
           </a>
-          <a href="!#" target="_blank">
-            {" "}
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="!#" target="_blank">
-            {" "}
-            <i class="bi bi-twitter"></i>
-          </a>
           <a
             href="https://t.me/madaminovizzatbek"
             target="_blank"
@@ -87,7 +79,7 @@ function Resume() {
           </div>
         ))}
       </div>
-      <div className="language">
+      {/* <div className="language">
         <h3>Language:</h3>
         {lang.map((list) => (
           <>
@@ -102,7 +94,7 @@ function Resume() {
             ></Line>
           </>
         ))}
-      </div>
+      </div> */}
 
       <a href={resumeImg} target="_blank" rel="noreferrer">
         {" "}

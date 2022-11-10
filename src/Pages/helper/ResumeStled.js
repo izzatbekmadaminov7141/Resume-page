@@ -2,17 +2,20 @@ import styled, { createGlobalStyle } from "styled-components";
 import { motion } from "framer-motion";
 const ResumeStyled = createGlobalStyle` 
 .resume{
-    width:20rem;
-    min-height: 100vh;
+    width:15rem;
+    min-height: 80vh;
     background-color:#fff;
     padding: 50px 30px 20px 30px;
     text-align: center;
     margin-right:10px ;
     position: fixed;
+    top: 50px;
     z-index: 3;
+    /* border: 1px solid var(--text-p); */
+    border-radius:0  20px 20px 0;
     img{
-      width: 200px;
-      height:200px;
+      width: 150px;
+      height:150px;
       object-position: top;
       object-fit: cover;
       border-radius: 50%;
@@ -23,10 +26,12 @@ const ResumeStyled = createGlobalStyle`
       line-height: 2;
       h2{
         font-weight: 300;
+        line-height: 1.2;
       }
       h3{
         font-weight: 100;
         color: var(--text-p);
+        font-size: 12px;
       }
       span{
         position: absolute;
@@ -34,14 +39,15 @@ const ResumeStyled = createGlobalStyle`
         height: 25px;
         background-color: rgb(390,150,30);
         border-radius:50px;
-        top: 170px;
-        right: 65px;
+        top: 120px;
+        right: 35px;
       }
       .icons{
         display: flex;
         justify-content:space-between;
         align-items:center;
-        padding: 20px 0px;
+        flex-wrap: wrap;
+        padding: 10px 0px;
         a{
           display: inline-block;
           color:#333;
@@ -108,7 +114,7 @@ i{
     color:var(--text-p);
   }
   p{
-    font-size: 20px;
+    font-size: 10px;
     color:var(--text-p);
   } 
   }
@@ -116,6 +122,7 @@ i{
  }
  .btn{
   cursor: pointer;
+  padding: 10px;
   i{
     font-size: 20px;
   }

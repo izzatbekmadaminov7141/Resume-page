@@ -30,11 +30,7 @@ function navbar() {
     >
       <NavbarStyled />
       <NavbarMedia />
-
       <div className="media">
-        <i className="iconResume" onClick={handeHidden}>
-          {hidden ? <BsFillPersonCheckFill /> : <BsFillPersonDashFill />}
-        </i>
         <NavLink to={"/"}>
           <i className="icon">
             <FaHome />

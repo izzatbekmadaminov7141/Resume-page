@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const NavbarStyled = createGlobalStyle`
 nav{
   overflow: hidden;
-  width: 100px;
-  height: 63vh;
+  width: 70px;
+  height: 60vh;
   display: flex;
   position: fixed;
   top: 20%;
@@ -20,7 +20,6 @@ nav{
   .lamp{
      display: inline-block;
     padding: 14px;
-    background-color:var(--background);
     color:var(--text-p);
     border-radius:50px;
     font-size: 25px;
@@ -28,16 +27,16 @@ nav{
   }
   .icon{
     display: inline-block;
-    margin: 20px 0 ;
-    padding: 14px;
-    background-color:var(--background);
+    margin: 10px 0 ;
+    padding: 10px;
+    // background-color:var(--background);
     color:var(--text-p);
     border-radius:50px;
     font-size: 25px;
   }  
   .active{
     transition: all 0.5s ease-in;
-    background-color: var(--bgc-yellow);
+    /* background-color: var(--bgc-yellow); */
     display: inline-block;
     border-radius:80px 80px  80px 0 ;
     padding: 0 10px;  
